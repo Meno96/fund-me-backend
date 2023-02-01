@@ -9,28 +9,28 @@ Hardhat project that manages the funding and withdrawal from a smart contract fo
 <hr/>
 
 ## 🗎&nbsp; Requirements
-
--   [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
     You'll know you did it right if you can run `git --version` and you see a response like `git version x.x.x`
--   [Nodejs](https://nodejs.org/en/)
+    
+- [Nodejs](https://nodejs.org/en/)
 
     You'll know you've installed nodejs right if you can run: `node --version` and get an ouput like: `vx.x.x`
-
--   [Yarn](https://yarnpkg.com/getting-started/install) instead of `npm`
-    You'll know you've installed yarn right if you can run: `yarn --version` and get an output like: `x.x.x`
-    You might need to [install it with `npm`](https://classic.yarnpkg.com/lang/en/docs/install/) or `corepack`
+- [Yarn](https://yarnpkg.com/getting-started/install) instead of `npm`
+   
+   You'll know you've installed yarn right if you can run: `yarn --version` and get an output like: `x.x.x`
+   
+   You might need to [install it with `npm`](https://classic.yarnpkg.com/lang/en/docs/install/) or `corepack`
 
 ## 🛠️&nbsp; How to run
-
--   Clone the repo:
+- Clone the repo:
     ```
     git clone https://github.com/Meno96/fund-me-backend.git
     ```
--   Enter the directory:
+- Enter the directory:
     ```
     cd fund-me-backend
     ```
--   Install packages:
+- Install packages:
     ```
     yarn
     ```
@@ -55,15 +55,25 @@ yarn hardhat test
 yarn hardhat coverage
 ```
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e8c3e52654805d89f073fe6844b5dd941d7f62cc
 ### Deployment to a testnet or mainnet
 
 1. Setup environment variables
 
 You'll want to set your `GOERLI_RPC_URL` and `PRIVATE_KEY` as environment variables. You can add them to a `.env` file, similar to what you see in `.env.example`.
 
+<<<<<<< HEAD
 -   `PRIVATE_KEY`: The private key of your account (like from [metamask](https://metamask.io/)). **NOTE:** FOR DEVELOPMENT, PLEASE USE A KEY THAT DOESN'T HAVE ANY REAL FUNDS ASSOCIATED WITH IT.
     -   You can [learn how to export it here](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key).
 -   `GOERLI_RPC_URL`: This is url of the goerli testnet node you're working with. You can get setup with one for free from [Alchemy](https://alchemy.com/?a=673c802981)
+=======
+- `PRIVATE_KEY`: The private key of your account (like from [metamask](https://metamask.io/)). **NOTE:** FOR DEVELOPMENT, PLEASE USE A KEY THAT DOESN'T HAVE ANY REAL FUNDS ASSOCIATED WITH IT.
+  - You can [learn how to export it here](https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key).
+- `GOERLI_RPC_URL`: This is url of the goerli testnet node you're working with. You can get setup with one for free from [Alchemy](https://alchemy.com/?a=673c802981)
+>>>>>>> e8c3e52654805d89f073fe6844b5dd941d7f62cc
 
 2. Get testnet ETH
 
@@ -77,14 +87,21 @@ yarn hardhat deploy --network goerli
 
 ## Scripts
 
+<<<<<<< HEAD
 After deploy to a testnet or local net, you can run the scripts.
+=======
+After deploy to a testnet or local net, you can run the scripts. 
+>>>>>>> e8c3e52654805d89f073fe6844b5dd941d7f62cc
 
 ```
 yarn hardhat run scripts/fund.js
 ```
 
 or
+<<<<<<< HEAD
 
+=======
+>>>>>>> e8c3e52654805d89f073fe6844b5dd941d7f62cc
 ```
 yarn hardhat run scripts/withdraw.js
 ```
@@ -101,9 +118,16 @@ And you'll see and output file called `gas-report.txt`
 
 ### Estimate gas cost in USD
 
+<<<<<<< HEAD
 To get a USD estimation of gas cost, you'll need a `COINMARKETCAP_API_KEY` environment variable. You can get one for free from [CoinMarketCap](https://pro.coinmarketcap.com/signup).
 
 Then, uncomment the line `coinmarketcap: COINMARKETCAP_API_KEY,` in `hardhat.config.js` to get the USD estimation. Just note, everytime you run your tests it will use an API call, so it might make sense to have using coinmarketcap disabled until you need it. You can disable it by just commenting the line back out.
+=======
+To get a USD estimation of gas cost, you'll need a `COINMARKETCAP_API_KEY` environment variable. You can get one for free from [CoinMarketCap](https://pro.coinmarketcap.com/signup). 
+
+Then, uncomment the line `coinmarketcap: COINMARKETCAP_API_KEY,` in `hardhat.config.js` to get the USD estimation. Just note, everytime you run your tests it will use an API call, so it might make sense to have using coinmarketcap disabled until you need it. You can disable it by just commenting the line back out. 
+
+>>>>>>> e8c3e52654805d89f073fe6844b5dd941d7f62cc
 
 ## Verify on etherscan
 
@@ -122,6 +146,7 @@ yarn hardhat verify --constructor-args arguments.js DEPLOYED_CONTRACT_ADDRESS
 `solhint` installation: [Documentation](https://protofire.github.io/solhint/#installation)
 
 To check linting / code formatting:
+<<<<<<< HEAD
 
 ```
 yarn lint
@@ -129,11 +154,21 @@ yarn lint
 
 or, to fix:
 
+=======
+```
+yarn lint
+```
+or, to fix: 
+>>>>>>> e8c3e52654805d89f073fe6844b5dd941d7f62cc
 ```
 yarn lint:fix
 ```
 
+<<<<<<< HEAD
 # Formatting
+=======
+# Formatting 
+>>>>>>> e8c3e52654805d89f073fe6844b5dd941d7f62cc
 
 ```
 yarn format

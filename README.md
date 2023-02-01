@@ -54,7 +54,7 @@ yarn hardhat test
 ```
 yarn hardhat coverage
 ```
-
+ 
 ### Deployment to a testnet or mainnet
 
 1. Setup environment variables
